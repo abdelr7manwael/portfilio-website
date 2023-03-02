@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.65rem 0.9rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ff7a57;
+    border-color: #ff7a57;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #ff5c31;
+    border-color: #ff5c31;
+}
+
+.btn-black {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-color: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: #000;
+    border-color: #000;
+
+}
+
+
+
+.rounded {
+    border-radius: 50px;
+}
+
+/* ---------------- */
+nav {
+    padding: 0.5rem 0rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 15px 8px rgb(128 128 128 / 10%);
+    text-transform: capitalize;
+}
+
+nav .d-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .d-flex .logo .bar {
+    display: none;
+}
+
+nav .d-flex .logo img {
+    width: 75px;
+}
+
+nav .d-flex .menu {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav .d-flex .menu ul {
+    padding: 0;
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .d-flex .menu ul li a {
+    margin: 0 10px;
+    color: grey;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+nav .d-flex .menu ul li .active {
+    color: #ff7a57;
+}
+
+nav .d-flex .menu ul li a:hover {
+    color: black;
+}
+
+
+
+/* ================================== */
+/* main */
+
+main {
+    height: 90vh;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+main .container {
+    height: 100%;
+}
+
+main .d-flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+main .d-flex .info,
+main .d-flex .img-div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+}
+
+
+main .d-flex .img-div img {
+    align-self: flex-end;
+}
+
+main .d-flex .info p {
+    font-size: 25px;
+    font-weight: 500px;
+    opacity: .8;
+
+}
+
+
+main .d-flex .info h2 {
+    font-size: 74px;
+    font-weight: 700px;
+    opacity: .7;
+    line-height: 1.2;
+
+}
+
+main .d-flex .info h4 {
+    font-size: 22px;
+    font-weight: normal;
+    opacity: .7;
+    margin: 10px 0px;
+
+}
+
+main .d-flex .info .btns {
+    margin: 10px 0px;
+    text-transform: uppercase;
+}
+
+main .d-flex .info .btns a {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+main .d-flex .info .icons {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px 0px;
+
+
+}
+
+main .d-flex .info .icons div {
+    border: 1px solid #ff7a57;
+    background-color: white;
+    color: #ff7a57;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+main .d-flex .info .icons div:hover {
+    color: #fff;
+    background-color: #ff7a57;
+    cursor: pointer;
+}
+
+
+.widget {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: auto;
+    background-color: white;
+    padding: 20px 0px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    position: relative;
+    z-index: 999;
+    transform: translateY(-50%);
+    box-shadow: 0 0 30px rgb(22 20 111 / 20%);
+}
+
+.widget div {
+    width: 33%;
+    text-align: center;
+}
+
+.widget div h3 {
+    font-size: 25px;
+    opacity: .7;
+}
+
+.widget div p {
+    opacity: .5;
+}
+
+.widget div:not(:last-of-type) {
+    border-right: 1px solid lightgray;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+@media screen and (min-width: 1200px) {
+
+    main .d-flex .info,
+    main .d-flex .img-div {
+        width: 48%;
+    }
+
+    main .d-flex .img-div img {
+        width: 620px;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    main .d-flex .info {
+        width: 70%;
+    }
+
+    main .d-flex .img-div img {
+        width: 100%;
+    }
+
+    main .d-flex .img-div {
+        width: 29%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    main .d-flex .info {
+        width: 100%;
+
+    }
+
+    main .d-flex .img-div {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    main .d-flex .info {
+        width: 100%;
+
+    }
+
+    main .d-flex .img-div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    main .d-flex .info {
+        width: 100%;
+
+    }
+
+    main .d-flex .img-div {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    main {
+        height: auto;
+    }
+
+
+    .widget {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .widget div h3,
+    .widget div p {
+        font-size: 13px;
+        padding: 0px 5px;
+    }
+
+    nav .d-flex {
+        flex-flow: column nowrap;
+    }
+
+    nav .d-flex .logo {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    nav .d-flex .logo .bar {
+        display: block;
+        font-size: 30px;
+        color: grey;
+        border: 1px solid lightgray;
+        height: fit-content;
+        padding: 0px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    nav .d-flex .menu {
+        flex-flow: column nowrap;
+        display: none;
+    }
+
+    nav .d-flex .menu ul {
+        flex-flow: column nowrap;
+        margin: 1px 0px;
+    }
+
+    nav .d-flex .menu ul li {
+        margin: 10px 0px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid gray;
+    }
+
+
+
+
+
+}
