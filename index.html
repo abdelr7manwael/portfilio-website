@@ -1,114 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 
+        copy => ctrl + c
+        paste => ctrl + v
+     -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>steller</title>
+
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <nav>
         <div class="container">
-            <div class="d-flex">
-                <div class="logo">
-                    <a href="">
-                        <img src="img/logo.svg" alt="">
-                    </a>
+            <div class="row space-between align-center">
+                <img src="img/logo.svg" alt="">
+                <i class="fa-solid fa-bars"></i>
 
-                    <div class="bar">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-
-                </div>
                 <div class="menu">
-
                     <ul>
-                        <li><a class="active" href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">service</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
-                        
+                        <li><a href="" class="active">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">service</a></li>
+                        <li><a href="">portfolio</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contact</a></li>
                     </ul>
-
-                    <a href="#" class="btn btn-primary rounded">components</a>
-
+                    <a class="btn btn-primary">components</a>
                 </div>
-
-
-
-
-
             </div>
-
-
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <div class="d-flex">
-                <div class="info">
-                    <p>hello,I'm</p>
-                    <h2>James Smith</h2>
-                    <h4>Web Developer</h4>
 
-                    <div class="btns">
-                        <a href="#" class="btn btn-primary rounded">hire me</a>
-                        <a href="#" class="btn btn-black rounded">download cv</a>
+            <div class="d-flex space-between align-center ">
+                <div class="text">
+                    <p class="hello">hello,I'm</p>
+                    <h2 class="my-10">James Smith</h2>
+                    <p class="job">UI/UX Designer</p>
+                    <div class="btns my-10">
+                        <a class="btn btn-primary">hire me</a>
+                        <a class="btn btn-dark">Download CV</a>
                     </div>
 
-                    <div class="icons">
-                        <div>
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-
-                        <div>
-                            <i class="fa-brands fa-google-plus-g"></i>
-                        </div>
-
-                        <div>
-                            <i class="fa-brands fa-github-alt"></i>
-                        </div>
-
-                        <div>
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-
-
+                    <div class="icons my-20">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
                     </div>
-
                 </div>
-
-                <div class="img-div">
+                <div class="man-img">
                     <img src="img/man.svg" alt="">
                 </div>
             </div>
+
         </div>
     </main>
-
-    <section>
-        <div class="container">
-            <div class="widget">
-        <div>
-            <h3>124</h3>
+    <div class="widget">
+        <div class="item">
+            <p class="number">123</p>
             <p>Happy Clients</p>
         </div>
-        <div>
-            <h3>456</h3>
+
+        <div class="item">
+            <p class="number">456</p>
             <p>Project Completed</p>
         </div>
-        <div>
-            <h3>789</h3>
+
+        <div class="item">
+            <p class="number">789</p>
             <p>Awards Won</p>
         </div>
-        </div>
+    </div>
+
+    <section class="cv">
+        <div class="container">
+
+            <div class="row space-between">
+                <div class="img-div">
+                    <img src="img/avatar.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p class="name">James Smith</p>
+                    <p class="job my-10">UI/UX Designer</p>
+                    <p class="my-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod, magni magnam.</p>
+                    <p class="my-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur ullam voluptatum asperiores.</p>
+                    <a class="btn btn-primary my-20">Download CV</a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="service">
+        <div class="container">
+            <div class="title">
+                <p class="sub-title">service</p>
+                <h3>What I Do</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. 
+                    rerum commodi corrupti, temporibus non quam.
+                </p>
+            </div>
+
+            <div class="row space-between">
+                <div class="item">
+                    <i class="fa-solid fa-crown"></i>
+                    <p>UI/UX Design</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-desktop"></i>
+                    <p>Web Design</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>App Design</p>
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p>SEO</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="skills">
+        <div class="container">
+            <div class="title">
+                <p class="sub-title">skills</p>
+                <h3>Why Choose me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. 
+                    rerum commodi corrupti, temporibus non quam.
+                </p>
+            </div>
+
+            <div class="row space-between">
+                <div class="skill">
+                    <h4>Photoshop</h4>
+
+                    <div class="progress-parent">
+                        <div class="progress-child  w-85"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>Web Design</h4>
+
+                    <div class="progress-parent">
+                        <div class="progress-child w-75"></div>
+                    </div>
+                </div>
+
+
+                <div class="skill">
+                    <h4>App Design</h4>
+                    <div class="progress-parent">
+                        <div class="progress-child  w-90"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <h4>SEO</h4>
+                    <div class="progress-parent">
+                        <div class="progress-child  w-95"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="title">
+                <p class="sub-title">portfolio</p>
+                <h3>Check My Wonderful Works</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. 
+                    rerum commodi corrupti, temporibus non quam.
+                </p>
+            </div>
+
+            <div class="row space-between">
+                <div class="column-div">
+                    <div class="img-div">
+                        <img src="img/folio-1.jpg" alt="">
+                        <div class="info">
+                            <p>Project Title</p>
+                            <div class="btns">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-div">
+                        <img src="img/folio-2.jpg" alt="">
+                        <div class="info">
+                            <p>Project Title</p>
+                            <div class="btns">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="column-div">
+                    <div class="img-div">
+                    <img src="img/folio-3.jpg" alt="">
+                    <div class="info">
+                            <p>Project Title</p>
+                            <div class="btns">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-div">
+                        <img src="img/folio-4.jpg" alt="">
+                        <div class="info">
+                            <p>Project Title</p>
+                            <div class="btns">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="column-div">
+                    <div class="img-div">
+                    <img src="img/folio-5.jpg" alt="">
+                    <div class="info">
+                            <p>Project Title</p>
+                            <div class="btns">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="img-div">
+                        <img src="img/folio-6.jpg" alt="">
+                        <div class="info">
+                            <p>Project Title</p>
+                            <div class="btns">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="blog">
+        <div class="container">
+            
+            <div class="title">
+                <p class="sub-title">My Blogs</p>
+                <h3>Latest News</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. 
+                    rerum commodi corrupti, temporibus non quam.
+                </p>
+            </div>
+            
+            
+            
+            <div class="row space-between">
+                <div class="column-div">
+                    <div class="img-div">
+                        <img src="img/blog-1.jpg" alt="">
+                    </div>
+
+                    <div class="padding">
+                        <h3>Designe for Everyone</h3>
+                        <div class="d-flex muted space-between">
+                            <a href="#">Posted By: Admin</a>
+                            <a href="#"><i class="fa-regular fa-thumbs-up"></i> 456</a>
+                            <a href="#"><i class="fa-regular fa-message"></i> 123</a>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
+
+                        <a href="#" class="orange-link">read more...</a>
+
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="column-div">
+                    <div class="img-div">
+                        <img src="img/blog-2.jpg" alt="">
+                    </div>
+                    
+                    <div class="padding">
+                        <h3>Designe for Everyone</h3>
+                        <div class="d-flex muted space-between">
+                            <a href="#">Posted By: Admin</a>
+                            <a href="#"><i class="fa-regular fa-thumbs-up"></i> 456</a>
+                            <a href="#"><i class="fa-regular fa-message"></i> 123</a>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
+
+                        <a href="#" class="orange-link">read more...</a>
+
+                    </div>
+                    
+                </div>
+
+                <div class="column-div">
+                    <div class="img-div">
+                        <img src="img/blog-3.jpg" alt="">
+                    </div>
+                    
+                    <div class="padding">
+                        <h3>Designe for Everyone</h3>
+                        <div class="d-flex muted space-between">
+                            <a href="#">Posted By: Admin</a>
+                            <a href="#"><i class="fa-regular fa-thumbs-up"></i> 456</a>
+                            <a href="#"><i class="fa-regular fa-message"></i> 123</a>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
+
+                        <a href="#" class="orange-link">read more...</a>
+
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+
+            <div class="orange row space-between">
+                <div>
+                    <h3>Hire Me For Your Project</h3>
+                    <p>Accusantium labore nostrum similique quisquam.</p>
+                </div>
+
+                <button class="btn">Hire me!</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        
+        <div class="container">
+
+            <div class="title">
+                <p class="sub-title">Contact</p>
+                <h3>Get In Touch With Me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. 
+                    rerum commodi corrupti, temporibus non quam.
+                </p>
+            </div>
+
+
+            <div class="form-div">
+                <div class="form-inputs">
+                    <p>Available 24/7</p>
+                    <h2>Get In Touch</h2>
+                    <input type="text" placeholder="Enter Email">
+
+                    <input type="password" placeholder="Enter Password">
+
+                    <textarea name="" placeholder="Message"></textarea>
+
+                    <button class="w-100 btn btn-primary">Submit</button>
+                </div>
+                <div class="form-info">
+
+                    <div class="item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="border-bottom">
+                            <h5>Location</h5>
+                            <p>12345 Fake ST NoWhere AB Country</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="item">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div class="border-bottom">
+                            <h5>Phone Number</h5>
+                            <p>(123) 456-7890</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="border-bottom">
+                            <h5>Email Address</h5>
+                            <p>info@website.com</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+    </section>
+    <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991441025351!2d2.2919063768047607!3d48.85837360070715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2seg!4v1685630251324!5m2!1sen!2seg"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row space-between">
+                <div>
+                    <p>Copy right <i class="fa-solid fa-copyright"></i></p>
+                <a href=""></a>
+                </div>
+
+                <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+
+
+                
+            </div>
+        </div>
+    </footer>
+
+
+
     
+
 </body>
 </html>
+
